@@ -1,0 +1,39 @@
+.navbar{
+  background-color: black;
+  padding-left: 1000px;
+  text-align: right;
+}
+
+ul {
+  display: inline-flex;
+  margin: 100px;
+}
+
+li{
+  list-style-type: none;
+  padding: 12px 20px;
+  cursor: pointer;
+}
+
+ul li a{
+  color: white;
+}
+
+ul li a:hover{
+  text-decoration: none;
+  text-transform: capitalize;
+  color: blueviolet;
+}
+
+.contact{
+  right: 80px;
+  position: absolute;
+  color: #fff;
+  border: 2px solid transparent;
+  border-radius: 20px;
+  background-image: linear-gradient(#42455a, #42455a),
+    radial-gradient(circle at top left, #fd00fd, #19d7f8);
+  background-origin: border-box;
+  background-clip: content-box,border-box;
+
+}

@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+	font-family: 'Chelsea Market', cursive;
+}
+
+button{
+	font-family: 'Chelsea Market', cursive;
+}
+
+header{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+
+nav{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+
+
+.logo{
+    margin: 1rem;
+}
+.logo img{
+    width: 4rem;
+}
+
+.nav-list{
+    list-style: none;
+    display: flex;
+}
+
+.nav-item{
+    margin: 2.5rem;
+}
+
+.nav-link{
+    text-decoration: none;
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: white;
+}
+
+.btn{
+    padding: .5rem 2rem;
+    background-color: yellow;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 18px;
+}
+
+.signup{
+    position: absolute;
+    top: 2rem;
+    right: 3rem;
+}
+
+
+.hero{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(to bottom , rgba(0,0,0,.4),rgba(0,0,0,.3)), url('./images/bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -1;
+}
+
+.hero-container{
+    position: absolute;
+    margin-top: 10%;
+    margin-left: 10%;
+}
+
+.main-text{
+    width: 60%;
+    padding: 2rem;
+    text-decoration: none;
+    font-size: 60px;
+    letter-spacing: 1px;
+    color: white;
+    text-align: left;
+    
+}
+
+.main-text span{
+    color: yellow;
+}
+
+.explore-btn{
+    margin: 0 2rem;
+}
+
+.vertical-bar{
+    position: absolute;
+    top:0;
+    left: 0;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+}
+
+.vertical-bar i{
+    font-size: 30px;
+    display: block;
+    padding: 2rem 1rem 1rem 1rem;
+}
+
+.search-icon{
+    height: 60%;
+}
+
+.search-icon i{
+    color: white;
+}
+
+
+.social-icons{
+    background-color: yellow;
+    height: 40%;
+}
+
+.notifications{
+    background-color: yellow;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 400px;
+    align-items: center;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.notifications p{
+    text-align: end;
+}
+
+.contents{
+    padding: 1rem;
+}
+
+.notifications-img img{
+    width: 200px;
+    
+}

@@ -1,0 +1,201 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Chelsea Market', cursive;
+}
+
+button {
+	font-family: 'Chelsea Market', cursive;
+}
+
+header {
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+
+nav {
+	width: 80%;
+	margin: auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: start;
+}
+
+.logo {
+	margin: 1rem;
+}
+.logo img {
+	width: 4rem;
+}
+
+.nav-list {
+	list-style: none;
+	display: flex;
+}
+
+.nav-item {
+	position: relative;
+	margin: 2.5rem;
+}
+
+.nav-list li {
+	position: relative;
+}
+.nav-list li ::after {
+	position: absolute;
+	bottom: -6px;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 0%;
+	content: '.';
+	color: transparent;
+	background: yellow;
+	height: 1px;
+}
+.nav-list li :hover::after {
+	width: 100%;
+}
+
+.nav-list li  {
+	transition: all 2s;
+}
+
+.nav-link {
+	text-decoration: none;
+	font-size: 18px;
+	letter-spacing: 1px;
+	color: white;
+	margin-bottom: .5rem;
+}
+
+.btn {
+	padding: .5rem 2rem;
+	background-color: yellow;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 18px;
+	cursor: pointer;
+}
+
+.signup {
+	position: absolute;
+	top: 2rem;
+	right: 3rem;
+}
+
+.hero {
+	width: 100%;
+	height: 100vh;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	z-index: -1;
+}
+
+.hero-container {
+	top: 0;
+	left: 0;
+	margin-top: 10%;
+	margin-left: 10%;
+	z-index: 1;
+	position: absolute;
+}
+
+.main-text {
+	width: 60%;
+	padding: 2rem;
+	text-decoration: none;
+	font-size: 60px;
+	letter-spacing: 1px;
+	color: white;
+	text-align: left;
+}
+
+.main-text span {
+	color: yellow;
+}
+
+.explore-btn {
+	margin: 0 2rem;
+	cursor: pointer;
+	z-index: 1;
+}
+
+.angle-right {
+	font-size: 100px;
+	color: white;
+	position: absolute;
+	right: 2rem;
+	top: 40%;
+	cursor: pointer;
+}
+
+.vertical-bar {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	background-color: rgb(0, 0, 0);
+	z-index: 1;
+}
+
+.vertical-bar i {
+	font-size: 30px;
+	display: block;
+	padding: 2rem 1rem 1rem 1rem;
+}
+
+.search-icon {
+	height: 60%;
+}
+
+.search-icon i {
+	color: white;
+}
+
+.social-icons {
+	background-color: yellow;
+	height: 40%;
+}
+
+.notifications {
+	background-color: yellow;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	width: 400px;
+	align-items: center;
+	display: flex;
+	padding: 0;
+	margin: 0;
+}
+
+.notifications p {
+	text-align: end;
+}
+
+.contents {
+	padding: 1rem;
+}
+
+.notifications-img img {
+	width: 200px;
+}
+
+
+.slick-dots li.slick-active button:before {
+  color: #881798;
+}
+
+.slick-next {
+	margin-right: 10%;
+	cursor: pointer;
+}

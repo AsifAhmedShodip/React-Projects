@@ -1,0 +1,364 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Chelsea Market', cursive;
+}
+
+button {
+	font-family: 'Chelsea Market', cursive;
+}
+
+header{
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+
+.container {
+	width: 60%;
+	margin: auto;
+}
+
+.nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	top:0;
+	left: 0;
+	border-bottom: 1px solid rgba(255, 255, 255, .2);
+	padding: 1rem 0;
+}
+
+.nav-links {
+	display: flex;
+	list-style: none;
+}
+
+.nav-link {
+	text-decoration: none;
+	margin: 1rem 1rem;
+	text-transform: uppercase;
+	font-size: 16px;
+	color: white;
+	letter-spacing: 2px;
+}
+.logo img {
+	width: 50px;
+}
+
+.menu-icons i {
+	font-size: 30px;
+	color: black;
+	cursor: pointer;
+}
+
+.open,
+.close {
+	display: none;
+}
+
+.close {
+	position: absolute;
+	top: 1rem;
+	left: 1rem;
+}
+
+.hero {
+	width: 100%;
+	height: 80vh;
+	z-index: -1;
+	background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0.5), rgba(255, 255, 0, 0.2)),
+		url('./images/header-bg.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+.hero::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: -3px;
+	width: 100%;
+	height: 227px;
+	background-image: url('./images/wave-large.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.hero-talks {
+	position: absolute;
+	width: 40%;
+	top: 30%;
+	color: whitesmoke;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+
+.hero-talks h1 {
+	font-size: 40px;
+}
+
+.hero-talks p {
+	text-transform: capitalize;
+	letter-spacing: 1px;
+}
+
+.hero-talks button {
+	background: #5a0a52;
+	height: 50px;
+	width: 150px;
+	cursor: pointer;
+	font-size: 16px;
+	border: none;
+	color: white;
+	margin: 30px 0px 0px 0px;
+	border-radius: 2rem;
+}
+
+.hero-talks button:hover {
+	background: #8b1880;
+}
+
+.title{
+	padding-bottom: 2rem;
+}
+.title h4,.title h1,.title p{
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+.title h4{
+	font-size: 18px;
+}
+.title h1{
+	font-size: 34px;
+	margin: .5rem;
+}
+.title p{
+	text-transform: capitalize;
+}
+
+
+.experience-grid{
+	width: 70%;
+	margin: auto;
+	display: grid;
+	grid-template-columns: repeat( auto-fit, minmax(20rem, 1fr) );
+	grid-gap: .5rem;
+}
+
+.experience-item{
+	height: 30rem;
+	padding: 5rem;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	cursor: pointer;
+	z-index: 1;
+	overflow: hidden;
+}
+
+.experience-item::before{
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0.5), rgba(255, 255, 0, 0.2)),url('./images/stars.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	z-index: -1;
+}
+
+.hiking::before{
+	background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0.5), rgba(255, 255, 0, 0.2)),url('./images/hiking.jpg');
+}
+
+.camping::before{
+	background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0.5), rgba(255, 255, 0, 0.2)),url('./images/camping.jpg');
+}
+
+.experience-item i{
+	font-size: 45px;
+}
+.experience-item h1{
+	font-size: 34px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+.experience-item p{
+	font-size: 18px;
+	letter-spacing: 1px;
+	text-transform: capitalize;
+}
+
+
+
+
+
+
+.testimonial{
+	position: relative;
+	width: 100%;
+	height: 80vh;
+	background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0.5), rgba(255, 255, 0, 0.2)),
+		url('./images/testimonials-bg.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	z-index: -1;
+
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	
+}
+
+.testimonial::before{
+	content: "";
+	position: absolute;
+	left: 0;
+	top: -3px;
+	width: 100%;
+	height: 227px;
+	background-image: url('./images/wave-large-reversed.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	z-index: -1;
+}
+
+.testimonial-talks{
+	text-align: center;
+}
+
+.testimonial-talks i{
+	font-size: 60px;
+	margin: 1rem;
+}
+
+.testimonial-talks p{
+	font-size: 20px;
+	margin: 1rem;
+	color: aliceblue;
+	letter-spacing: 1px;
+}
+
+.testimonial img{
+	height: 5rem;
+	width: 5rem;
+	border: 2px solid #5a0a52;
+	border-radius: 50%;
+}
+
+
+
+
+@media screen and (max-width: 1100px) {
+
+
+	.container {
+		width: 70%;
+	}
+}
+
+@media screen and (max-width: 900px) {
+	.container {
+		width: 90%;
+	}
+}
+
+@media screen and (max-width: 750px) {
+	.container {
+		width: 90%;
+	}
+	.open {
+		display: inline;
+		position: absolute;
+		top: 2rem;
+		right: 2rem;
+	}
+
+	.nav-item {
+		display: none;
+		margin: 1.5rem 0;
+	}
+
+	.nav-link {
+		color: black;
+	}
+
+	.open i {
+		color: aliceblue;
+	}
+
+	.active {
+		background-color: #fff;
+		list-style: none;
+		height: 100vh;
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 25rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		transition: all 650ms ease-in-out;
+	}
+
+	.active .nav-item {
+		display: inline;
+		transition: all 650ms ease-in-out;
+	}
+
+	.active .close {
+		display: inline;
+	}
+
+	.hero {
+		height: 90vh;
+	}
+
+	.hero::before {
+		background-image: url('./images/wave-medium.png');
+		height: 94px;
+	}
+
+	.hero-talks{
+		top:20%
+	}
+
+	.testimonial::before {
+		background-image: url('./images/wave-medium-reversed.png');
+		height: 94px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.hero {
+		height: 90vh;
+	}
+
+	.hero::before {
+		background-image: url('./images/wave-small.png');
+		height: 47px;
+	}
+	.testimonial::before {
+		background-image: url('./images/wave-small-reversed.png');
+		height: 94px;
+	}
+}
